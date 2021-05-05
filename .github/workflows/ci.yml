@@ -43,5 +43,3 @@ jobs:
         cd my-app
         npm start &
         npx wait-on --timeout 60000
-    # If we had more time, at this point we can actually deploy our app
-    # to a staging server and then run functional tests

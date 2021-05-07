@@ -62,7 +62,7 @@ exports.config = {
     logLevel: 'debug',
     // bail (default is 0 - don't bail, run all tests).
     bail: 0,
-    baseUrl: 'http://www.saucedemo.com',
+    baseUrl: 'http://localhost:3000/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

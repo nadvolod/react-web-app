@@ -74,3 +74,35 @@ jobs:
 ```
 * Add secret variables
 * Commit and watch it 🏃‍♀️
+
+### Add another test
+
+* Add a test for checking that the url is correct
+* Update the url text
+* Update the code to use a test id
+* Commit and push to CI
+
+### Shift-right and add a visual test
+
+* Learn about [webdriverio](https://webdriver.io/docs/gettingstarted) and [screenerio](https://screener.io/)
+* install wdio
+
+```bash
+npm install @wdio/cli
+```
+
+* setup wdio
+
+`npx wdio config`
+
+* paste the following code as the new test
+
+```js
+describe('My React application', () => {
+    it('should look correct', () => {
+        browser.url(`/`);
+        browser.execute('/*@visual.init*/', 'My React App');
+        browser.execute('/*@visual.snapshot*/', 'Home Page');
+    });
+});
+```

@@ -6,7 +6,7 @@ env:
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, open_js_conf ]
   pull_request:
     branches: [ main ]
 

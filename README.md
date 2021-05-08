@@ -81,7 +81,7 @@ jobs:
 |---|---|---|---|
 | A URL with the right text exists  | ✅ | Component | React testing library, Jest |
 | App renders correctly  | 🙅‍♂️ |   |   |
-| URL is correct | 🙅‍♂️ |  |  |
+| URL is correct | 🙅‍♂️ |   |  |
 | App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
 | Front-end performance is at least a B  | 🙅‍♂️ |   |   |
 | App is secure  | 🙅‍♂️ |   |   |
@@ -93,6 +93,16 @@ jobs:
 * Commit and push to CI
 
 ### Shift-right and add a visual test
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| A URL with the right text exists  | ✅ | Component | React testing library, Jest |
+| App renders correctly  | 🙅‍♂️ |   |   |
+| URL is correct | ✅ |  Component | React testing library, Jest |
+| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |
+| App is accessibility friendly  | 🙅‍♂️ |   |   |
 
 * Learn about [webdriverio](https://webdriver.io/docs/gettingstarted) and [screenerio](https://screener.io/)
 * install wdio
@@ -115,4 +125,17 @@ describe('My React application', () => {
         browser.execute('/*@visual.snapshot*/', 'Home Page');
     });
 });
+
 ```
+
+**🧪️Test Plan**
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| A URL with the right text exists  | ✅ | Component | React testing library, Jest |
+| App renders correctly  | ✅ | visual d2d  | Webdriverio, Screener.io  |
+| URL is correct | ✅ |  Component | React testing library, Jest |
+| App looks as expected on web and mobile  | ✅ | visual d2d  | Webdriverio, Screener.io  |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |
+| App is accessibility friendly  | 🙅‍♂️ |   |   |

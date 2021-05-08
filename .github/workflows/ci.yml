@@ -43,3 +43,7 @@ jobs:
         cd my-app
         npm start &
         npx wait-on --timeout 60000
+    - name: Run visual tests 👁
+      run: |
+        cd my-react-app
+        npm run test:visual

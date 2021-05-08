@@ -1,0 +1,23 @@
+{
+  "name": "react-web-app",
+  "version": "1.0.0",
+  "description": "A React web app that is built with testing in mind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadvolod/react-web-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadvolod/react-web-app/issues"
+  },
+  "homepage": "https://github.com/nadvolod/react-web-app#readme",
+  "dependencies": {
+    "create-react-app": "^4.0.3"
+  }
+}

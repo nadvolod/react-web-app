@@ -10,6 +10,43 @@ on:
       - main
 
 jobs:
+  build_and_test_local:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies 📦
+      #Using npm ci is generally faster than running npm install
+      run: |
+        cd my-app
+        npm ci
+    - name: Build the app 🏗
+      run: |
+        cd my-app
+        npm run build
+    - name: Run component tests 🔸
+      run: |
+        cd my-app
+        npm run test
+    - name: Start the app 📤
+      run: |
+        cd my-app
+        npm start &
+        npx wait-on --timeout 60000
+    - name: Run visual tests 👁
+      run: |
+        cd my-app
+        npm run test:visual
+
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
@@ -43,3 +80,20 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_DELIGHTFUL_GRASS_013A5660F }}
           action: "close"
+
+  test_production:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Run visual tests on prod 👁
+      run: |
+        cd my-app
+        npm run test:visual -- --baseUrl "https://delightful-grass-013a5660f-1.eastus2.azurestaticapps.net"

@@ -66,7 +66,7 @@ jobs:
     - name: Run visual tests on prod 👁
       run: |
         cd my-app
-        npm run test:visual -- --baseUrl="https://delightful-grass-013a5660f-2.eastus2.azurestaticapps.net"
+        npm run test:visual:prod 
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

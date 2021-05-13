@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:visual": "wdio run ./wdio.conf.js -- --logLevel='debug'"
+    "test:visual": "wdio run ./wdio.conf.js",
+    "test:visual:prod": "wdio run ./wdio.conf.js -- --logLevel='debug' --baseUrl='https://delightful-grass-013a5660f-2.eastus2.azurestaticapps.net'"
   },
   "eslintConfig": {
     "extends": [

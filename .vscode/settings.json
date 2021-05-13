@@ -1,5 +1,5 @@
 {
     "staticWebApps.appSubpath": "/my-app",
     "staticWebApps.apiSubpath": "",
-    "staticWebApps.outputSubpath": "/my-app/build"
+    "staticWebApps.outputSubpath": "/build"
 }

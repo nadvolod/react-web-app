@@ -63,6 +63,10 @@ jobs:
         api_location: "" # Api source code path - optional
         output_location: "build" # Built app content directory - optional
         ###### End of Repository/Build Configurations ######
+    - name: Run visual tests on prod 👁
+      run: |
+        cd my-app
+        npm run test:visual -- --baseUrl="https://delightful-grass-013a5660f-2.eastus2.azurestaticapps.net"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

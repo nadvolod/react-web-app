@@ -9,7 +9,7 @@ const sauceOptions = {
 };
 
 exports.config = {
-    //runner: 'local',
+    runner: 'local',
     region: 'us',
     services: [
         ['sauce', {

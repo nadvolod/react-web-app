@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI
+name: Azure Old
 env:
   SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
   SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}

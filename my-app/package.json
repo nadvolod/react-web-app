@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test:visual": "wdio run ./wdio.conf.js",
-    "test:visual:prod": "wdio run ./wdio.conf.js -- --logLevel='debug' --baseUrl='https://delightful-grass-013a5660f-2.eastus2.azurestaticapps.net'"
+    "test:visual:prod": "wdio run ./wdio.conf.js -- --logLevel='debug' --baseUrl='https://witty-plant-091fd3b10-2.centralus.azurestaticapps.net/'"
   },
   "eslintConfig": {
     "extends": [

@@ -1,4 +1,4 @@
-name: Azure Old
+name: Azure CI
 env:
   SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
   SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}

@@ -33,7 +33,7 @@ exports.config = {
     protocol: 'https',
     path: '/wd/hub',
     capabilities: [
-        //Desktop A 28%: https://www.w3schools.com/browsers/browsers_display.asp
+        //Desktop A 24%: https://www.w3schools.com/browsers/browsers_display.asp
         {
             browserName: 'chrome',
             platformName: 'windows 10',
@@ -42,7 +42,8 @@ exports.config = {
                 ...sauceOptions,
             },
             'sauce:visual':{
-                ...visualOptions
+                ...visualOptions,
+                viewportSize: '1366x768'
             }
         },
         {
@@ -59,7 +60,7 @@ exports.config = {
         }
     ],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'debug',
+    logLevel: 'warn',
     // bail (default is 0 - don't bail, run all tests).
     bail: 0,
     baseUrl: 'http://localhost:3000/',

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nadvolod/react-web-app/issues"
   },
-  "homepage": "https://github.com/nadvolod/react-web-app#readme"
+  "homepage": "https://github.com/nadvolod/react-web-app#readme",
+  "dependencies": {
+    "create-react-app": "^4.0.3"
+  }
 }

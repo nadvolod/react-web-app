@@ -6,7 +6,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@wdio/cli": "^7.5.6",
+    "@wdio/cli": "^7.5.7",
+    "@wdio/sync": "^7.5.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -17,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:visual": "wdio run ./wdio.conf.js"
+    "test:visual": "wdio run ./wdio.conf.js",
+    "test:visual:prod": "wdio run ./wdio.conf.js -- --logLevel='debug' --baseUrl='https://witty-plant-091fd3b10-2.centralus.azurestaticapps.net/'"
   },
   "eslintConfig": {
     "extends": [
@@ -38,11 +40,10 @@
     ]
   },
   "devDependencies": {
-    "@wdio/local-runner": "^7.0.7",
-    "@wdio/mocha-framework": "^7.0.7",
-    "@wdio/sauce-service": "^7.0.7",
-    "@wdio/spec-reporter": "^7.0.7",
-    "@wdio/sync": "^7.0.7",
+    "@wdio/local-runner": "^7.5.7",
+    "@wdio/mocha-framework": "^7.5.3",
+    "@wdio/sauce-service": "^7.5.7",
+    "@wdio/spec-reporter": "^7.5.7",
     "chromedriver": "^90.0.0",
     "wdio-chromedriver-service": "^7.0.0"
   }

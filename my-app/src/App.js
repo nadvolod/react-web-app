@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './mia.jpg';
 import './App.css';
 
 function App() {
@@ -14,8 +14,9 @@ function App() {
           href="https://ultimateqa.com"
           target="_blank"
           rel="noopener noreferrer"
+          data-testid="learn-link"
         >
-          Learn Testing
+          Learn Testing with Nikolay And Mia
         </a>
       </header>
     </div>

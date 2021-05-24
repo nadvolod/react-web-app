@@ -13,6 +13,18 @@ cd my-app
 npm start
 ```
 
+### 🧪️Testing strategy
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| A URL with the right text exists  | 🙅‍♂️ |  |  |
+| App renders correctly  | 🙅‍♂️ |   |   |
+| URL is correct | 🙅‍♂️ |   |  |
+| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |
+| App is accessibility friendly  | 🙅‍♂️ |   |   |
+
 ### Run the tests that come with our app
 
 * In a new terminal `npm run test`
